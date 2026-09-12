@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: "Playfair Display", Georgia, serif;
+    --font-body: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #140E13;
+    color: #FAF5F0;
+    overflow-x: hidden;
+    min-height: 100vh;
+    min-height: 100dvh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Glassmorphic and romantic glow helpers */
+.romantic-card {
+  background: rgba(38, 24, 32, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 185, 192, 0.18);
+  box-shadow: 0 16px 40px -12px rgba(20, 10, 16, 0.5),
+              0 0 25px -5px rgba(183, 110, 121, 0.12);
+}
+
+.romantic-card-interactive {
+  background: rgba(42, 26, 36, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 185, 192, 0.15);
+  box-shadow: 0 12px 30px -10px rgba(10, 5, 8, 0.4);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.romantic-card-interactive:hover {
+  background: rgba(54, 32, 45, 0.88);
+  border-color: rgba(226, 185, 192, 0.4);
+  box-shadow: 0 20px 45px -10px rgba(10, 5, 8, 0.6),
+              0 0 30px 2px rgba(212, 175, 55, 0.15);
+  transform: translateY(-3px);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F9E7B9 0%, #D4AF37 50%, #E9CA85 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rose-gradient-text {
+  background: linear-gradient(135deg, #FFF0EE 0%, #F5CCD2 40%, #D98894 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 4s ease-in-out infinite;
+}
+
+@keyframes music-bar-1 {
+  0%, 100% { height: 4px; }
+  50% { height: 13px; }
+}
+
+@keyframes music-bar-2 {
+  0%, 100% { height: 14px; }
+  50% { height: 6px; }
+}
+
+@keyframes music-bar-3 {
+  0%, 100% { height: 7px; }
+  50% { height: 15px; }
+}
+
+.animate-music-1 {
+  animation: music-bar-1 1.1s ease-in-out infinite;
+}
+
+.animate-music-2 {
+  animation: music-bar-2 0.85s ease-in-out infinite;
+}
+
+.animate-music-3 {
+  animation: music-bar-3 1.35s ease-in-out infinite;
+}
