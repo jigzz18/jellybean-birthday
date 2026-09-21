@@ -45,7 +45,7 @@ export const CONFIG: BirthdayConfig = {
 
   // 📅 Fixed date details (she chooses the vibe, you handle the plan)
   date: "Saturday, September 23, 2026",
-  time: "2:00 PM",
+  time: "2:30 PM",
   location: "NL College(Malad)",
 
   // 💌 Final loving assurance
