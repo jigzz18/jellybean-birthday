@@ -41,7 +41,7 @@ export const CONFIG: BirthdayConfig = {
   myName: "Charm",
 
   // 🎬 Video path in /public/assets/
-  introVideo: "/assets/birthday-video.mp4",
+  introVideo: "/public/assets/birthday-video.mp4",
 
   // 📅 Fixed date details (she chooses the vibe, you handle the plan)
   date: "Saturday, September 23, 2026",
