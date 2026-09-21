@@ -9,7 +9,7 @@ interface BackgroundMusicProps {
 // Local MP3 is now the ONLY audio source.
 // The YouTube player has been completely removed.
 const LOCAL_AUDIO_URL =
-  "/assets/romantic-music.mp3?v=pehla_nasha_master_v4";
+  "assets/romantic-music.mp3";
 
 // Step-specific volume profile based on emotional arc
 const STEP_AUDIO_PROFILES: Record<
